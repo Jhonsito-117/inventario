@@ -1,18 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   width: 100%;
+  background-color: #f3f3f3;
+  margin: auto;
 }
 
 header h1 {
   text-align: center;
+  color: #001aff;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
-  border: #001aff 1px;
+  margin: 20px 20px;
+  border: 1px solid #001aff;
   gap: 10px;
+  background-color: #f3f3f3;
+  width: 80%;
 }
 
 nav ul {
@@ -22,50 +27,68 @@ nav ul {
   gap: 20px;
 }
 
+nav li {
+  text-align: center;
+}
+
 nav a {
-  /* padding: 10px 20px; */
   text-decoration: none;
+  color: #001aff;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: center;
-  width: 80%;
+  width: 100%;
+  background-color: #f3f3f3;
+  margin: auto;
 }
 
 .general-container {
   display: flex;
   flex-direction: column;
+  background-color: #f3f3f3;
+  align-items: center;
 }
 
 section {
   width: 50%;
   max-width: 500px;
   margin: 20px;
+  background-color: #f3f3f3;
+  align-self: center;
+  justify-self: center;
 }
 
 section form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f3f3f3;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  background-color: #f3f3f3;
 }
 
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #568cff;
   padding: 8px;
   text-align: left;
+  background-color: #f3f3f3;
 }
 
 th {
-  background-color: lightgray;
+  background-color: #001aff;
+  color: white;
+}
+
+#search-query {
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -79,5 +102,8 @@ th {
   th,
   td {
     font-size: 3vw;
+  }
+  tr {
+    width: 80%;
   }
 }
